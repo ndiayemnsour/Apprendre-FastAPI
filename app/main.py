@@ -1,7 +1,9 @@
 from fastapi import FastAPI
+from app.api.routes import users
+app = FastAPI(title="Apprendre FASTAPI")
 
-app = FastAPI(title="Hello World FASTAPI")
-
+# Routes
+app.include_router(users.router)
 @app.get("/")
 def read_root():
-    return {"message": "World FASTAPI"}
+    return {"message": "Bienvenue dans FASTAPI"}
