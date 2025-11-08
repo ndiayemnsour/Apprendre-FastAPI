@@ -1,0 +1,42 @@
+# Environnements virtuels
+venv/
+env/
+*.pyc
+*.pyo
+__pycache__/
+*.pyd
+.Python
+
+# PyCharm
+.idea/
+*.iml
+
+# Base de données locale (SQLite)
+db.sqlite3
+
+# Fichiers de migration compilés
+*/migrations/__pycache__/
+
+# Logs
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Media et fichiers statiques générés
+/media/
+staticfiles/
+
+# Configurations locales
+*.env
+.env
+
+# Coverage / tests
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
